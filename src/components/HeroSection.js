@@ -41,14 +41,8 @@ const HeroStyles = styled.div`
   }
   .hero_info {
     margin-top: -18rem;
-    margin-left: 2 rem;
   }
-  .hero_info_desc p {
-    color: black;
-    font-weight: bold;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-  }
+
   .hero_social,
   .hero_scrollDown {
     display: flex;
@@ -100,6 +94,7 @@ const HeroStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
+      padding-bottom: 15rem;
     }
     .hero_heading {
       font-size: 1.4rem;
@@ -114,9 +109,10 @@ const HeroStyles = styled.div`
     .hero_info {
       margin-top: 3rem;
     }
+
     .hero_social {
-      left: 0;
-      bottom: 15px;
+      left: 0px;
+      bottom: -15%;
       width: 20px;
       .hero_social_indicator {
         width: 20px;
@@ -164,9 +160,7 @@ export default function HeroSection() {
               <div className="hero_info_desc">
                 <Ptext>
                   I am second year computer science student who also work as a
-                  freelance web designer and developer from past 2-3 months. I
-                  love to design and develope and make new web experiences for
-                  the people.
+                  freelance web designer and developer from past 2-3 months.
                 </Ptext>
               </div>
               <Button btnLink="/project" btnText="See My Work" />

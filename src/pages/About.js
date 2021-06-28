@@ -151,8 +151,6 @@ export default function About() {
                 'Web/UI Desgining',
                 'Web development',
                 'Graphic Desgining',
-                'Video Editing',
-                'Data Science with Python',
               ]}
             />
           </div>
