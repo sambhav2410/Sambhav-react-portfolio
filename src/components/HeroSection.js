@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import Ptext from './Ptext';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -17,10 +16,21 @@ const HeroStyles = styled.div`
     justify-content: center;
     position: relative;
   }
+  .hero_all {
+    margin-top: -25rem;
+  }
+  .hero_info {
+    margin-top: 4rem;
+    width: 100%;
+  }
 
+  .hero_info_desc {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
   .hero_heading {
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 0rem;
     position: relative;
     span {
       display: inline-block;
@@ -32,16 +42,6 @@ const HeroStyles = styled.div`
       color: var(--white);
     }
   }
-  .hero_img {
-    max-width: 900px;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    border: 2px solid var(--gray-1);
-  }
-  .hero_info {
-    margin-top: -18rem;
-  }
 
   .hero_social,
   .hero_scrollDown {
@@ -49,7 +49,7 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 45rem;
     width: 50px;
   }
   .hero_social {
@@ -94,25 +94,29 @@ const HeroStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
-      padding-bottom: 15rem;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
     .hero_heading {
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      margin-top: 10rem;
+      text-align: left;
       .hero_name {
         font-size: 4.5rem;
       }
     }
-    .hero_img {
-      height: 300px;
-    }
+
     .hero_info {
       margin-top: 3rem;
     }
-
+    .hero_info_desc {
+      text-align: left;
+    }
     .hero_social {
-      left: 0px;
-      bottom: -15%;
+      display: none;
+      left: 0rem;
+      bottom: 2%;
       width: 20px;
       .hero_social_indicator {
         width: 20px;
@@ -135,11 +139,13 @@ const HeroStyles = styled.div`
       }
     }
     .hero_scrollDown {
+      display: none;
       right: 0;
       width: 20px;
+      bottom: 15%;
       gap: 1rem;
       p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -150,62 +156,68 @@ export default function HeroSection() {
     <HeroStyles>
       <div className="hero">
         <div className="container">
-          <h1 className="hero_heading">
-            <span>Hello, This is </span>
-            <span className="hero_name">Sambhav Jain</span>
-          </h1>
-          <div className="hero_img">
-            <img src={HeroImg} alt="" />
+          <div className="hero_all">
+            <h1 className="hero_heading">
+              <span>Hello, This is </span>
+              <span className="hero_name">Sambhav Jain</span>
+            </h1>
             <div className="hero_info">
               <div className="hero_info_desc">
                 <Ptext>
-                  I am second year computer science student who also work as a
-                  freelance web designer and developer from past 2-3 months.
+                  I am second year computer science student who is exploring in
+                  the field of front-end developement (Web desgining, Web
+                  Development, Graphic Desigining) and learning everyday
+                  something new to improve his skills. Currently working as a
+                  freelancer in Web designer and development from past 2-3
+                  months.Looking for a Internship role in a reputable
+                  organization to utilize my technical, database, and management
+                  skills for the growth of the organization as well as to ensure
+                  my personal and professional growth
                 </Ptext>
               </div>
               <Button btnLink="/project" btnText="See My Work" />
             </div>
-            <div className="hero_social">
-              <div className="hero_social_indicator">
-                <p>Follow</p>
-                <img src={SocialMediaArrow} alt="" />
-              </div>
-              <div className="hero_social_text">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/sam_bhav.jain13/"
-                      target="_new"
-                      rel="noreferrer"
-                    >
-                      IG
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/sambhav-jain-a3a9351b4/"
-                      target="_new"
-                      rel="noreferrer"
-                    >
-                      LI
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/sambhav2410"
-                      target="_new"
-                      rel="noreferrer"
-                    >
-                      GH
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div className="hero_social">
+            <div className="hero_social_indicator">
+              <p>Follow</p>
+              <img src={SocialMediaArrow} alt="" />
             </div>
-            <div className="hero_scrollDown">
-              <p>Scroll</p>
-              <img src={ScrollDownArrow} alt="" />
+            <div className="hero_social_text">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.instagram.com/sam_bhav.jain13/"
+                    target="_new"
+                    rel="noreferrer"
+                  >
+                    IG
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/sam_bhav.jain13/"
+                    target="_new"
+                    rel="noreferrer"
+                  >
+                    GI
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/sam_bhav.jain13/"
+                    target="_new"
+                    rel="noreferrer"
+                  >
+                    LI
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div className="hero_scrollDown">
+            <p>Scroll</p>
+            <img src={ScrollDownArrow} alt="" />
           </div>
         </div>
       </div>

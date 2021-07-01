@@ -24,24 +24,40 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-next {
     position: absolute;
     height: 50px;
+
     width: 50px;
-    background: var(--deep-dark);
+    background: var(--white);
     z-index: 10;
-    right: 60px;
+    right: 60rem;
     left: auto;
     top: 0;
     transform: translateY(50%);
-    color: var(--gray-1);
+    color: var(--deep-dark);
     border-radius: 8px;
   }
   .swiper-button-next {
-    right: 0;
+    right: 53rem;
   }
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    .container {
+      margin-top: -10rem;
+    }
+    .swiper-button-prev {
+      right: 16rem;
+      width: 40px;
+      height: 40px;
+      top: 10px;
+    }
+    .swiper-button-next {
+      right: 11rem;
+      width: 40px;
+      height: 40px;
+      top: 10px;
+    }
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;
@@ -75,7 +91,7 @@ export default function ProjectSection() {
               },
 
               1200: {
-                slidesPerView: 3,
+                slidesPerView: 3.5,
               },
             }}
           >

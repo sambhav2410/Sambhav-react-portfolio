@@ -8,7 +8,7 @@ import WebImg from '../images/web.png';
 const projects = [
   {
     id: uuidv4(),
-    name: 'AllImageCompress',
+    name: 'All Image Compress',
     desc:
       'An application to compress any image fast with high compression ratio. I developed this website using Reactjs',
     img: CompressImg,

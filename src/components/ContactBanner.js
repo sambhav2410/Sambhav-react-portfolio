@@ -17,6 +17,9 @@ const ContactBannerStyle = styled.div`
     text-transform: lowercase;
   }
   @media only screen and (max-width: 768px) {
+    .container {
+      margin-top: -7rem;
+    }
     .VAexD h2 {
       font-size: 2.8rem;
     }

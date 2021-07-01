@@ -1,12 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-import RobotoMonoRegular from '../assets/fonts/RobotoMono-Regular.ttf';
+import PoppinsRegular from '../assets/fonts/poppins.regular.ttf';
+
 import MontserratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
 import MontserratBold from '../assets/fonts/Montserrat-Bold.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: 'RobotoMono Regular';
-    src: url(${RobotoMonoRegular});
+    font-family: 'Poppins Regular';
+    src: url(${PoppinsRegular});
     font-style: normal;
   }
   @font-face {
@@ -20,11 +21,11 @@ const Typography = createGlobalStyle`
     font-style: normal;
   }
   html{
-    font-family: 'RobotoMono Regular';
+    font-family: 'Poppins Regular';
     color: var(--gray-1);
   }
   *{
-    font-family: 'RobotoMono Regular';
+    font-family: 'Poppins Regular';
     color: var(--gray-1);
   }
    

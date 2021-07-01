@@ -12,7 +12,7 @@ const TestimonalsectionStyle = styled.div`
   text-align: center;
   .testimonal_wrapper {
     position: relative;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
   }
   .testimonal_info {
@@ -26,6 +26,8 @@ const TestimonalsectionStyle = styled.div`
   .testimonal_desc {
     .para {
       text-align: center;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
     }
   }
   .testimonal_name {
@@ -77,6 +79,34 @@ const TestimonalsectionStyle = styled.div`
     transform: scale(0.96);
     transition: 200ms ease-in;
     transition-property: transform, opacity;
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      margin-top: -7rem;
+    }
+    .testimonal_info {
+      width: 100%;
+      height: 240px;
+      padding: 3rem;
+      background-color: var(--deep-dark);
+      border-radius: 12px;
+      margin-top: 5rem;
+    }
+    .testimonal_desc {
+      .para {
+        text-align: center;
+        font-size: 8px;
+      }
+    }
+    .testimonal_name {
+      margin-top: 2rem;
+      font-family: 'Monteserrat Bold';
+      font-size: 12px;
+    }
+    .testimonal_title {
+      font-size: 11px;
+      margin-top: 0.3rem;
+    }
   }
 `;
 

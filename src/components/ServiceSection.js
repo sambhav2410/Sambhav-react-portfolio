@@ -13,6 +13,9 @@ const ServicesStyle = styled.div`
     margin-top: 8rem;
   }
   @media only screen and (max-width: 768px) {
+    .container {
+      margin-top: -10rem;
+    }
     .Services_items {
       flex-direction: column;
       max-width: 350px;

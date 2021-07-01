@@ -6,7 +6,7 @@ import CompressImg from '../assets/images/compressimage.png';
 const ProjectItemStyle = styled.div`
   .ProjectItem_img {
     width: 100%;
-    height: 480px;
+    height: 200px;
     overflow: hidden;
     border-radius: 12px;
     display: inline-block;
@@ -23,15 +23,30 @@ const ProjectItemStyle = styled.div`
   }
   .ProjectItem_title {
     font-size: 2.2rem;
+    text-align: center;
   }
   .ProjectItem_desc {
     font-size: 1.6rem;
-    font-family: 'RobotoMono Regular';
+    font-family: 'Poppins Regular';
     margin-top: 1rem;
   }
   @media only screen and (max-width: 768px) {
     .ProjectItem_img {
-      height: 350px;
+      width: 98%;
+      height: 210px;
+    }
+    .ProjectItem_info {
+      width: 98%;
+      height: 30px;
+      font-size: 15px;
+    }
+    .ProjectItem_title {
+      font-size: 20px;
+      margin-top: -1rem;
+      text-align: center;
+    }
+    .ProjectItem_desc {
+      font-size: 12px;
     }
   }
 `;

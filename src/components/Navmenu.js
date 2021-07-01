@@ -34,6 +34,9 @@ const NavmenuStyles = styled.nav`
     }
     .active {
       color: var(--white);
+
+      background-color: var(--deep-dark);
+      border-radius: 8px;
     }
   }
   .mobile-menu-icon {
@@ -113,7 +116,7 @@ function Navmenu() {
         </div>
         <li>
           <NavLink
-            to="/"
+            to="/home"
             onClick={() => setShowNav(!showNav)}
             role="button"
             onKeyDown={() => setShowNav(!showNav)}

@@ -39,6 +39,9 @@ const FootercolStyles = styled.div`
         margin-top: 5rem;
       }
     }
+    .footer_col1_title {
+      text-align: left;
+    }
     .footer__col1 .para {
       max-width: 100%;
     }

@@ -13,10 +13,13 @@ const AboutSectionStyle = styled.div`
     justify-content: flex-start;
     text-align: left;
   }
+
   .aboutSection_left,
   .aboutSection_right {
     flex: 1;
+    margin-top: -32rem;
   }
+
   .section-title {
     text-align: left;
   }
@@ -47,9 +50,12 @@ const AboutSectionStyle = styled.div`
     .aboutSection_left,
     .aboutSection_right {
       width: 100%;
+      padding-top: 10rem;
     }
     .aboutSection_right {
-      margin-top: 3rem;
+      margin-top: -4rem;
+      margin-left: -18rem;
+      width: 55rem;
     }
     .section-title {
       text-align: center;
