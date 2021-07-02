@@ -187,7 +187,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://www.instagram.com/sam_bhav.jain13/"
+                    href="https://instagram.com/sam_bhav.jain13/"
                     target="_new"
                     rel="noreferrer"
                   >
@@ -196,7 +196,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/sam_bhav.jain13/"
+                    href="https://github.com/sambhav2410"
                     target="_new"
                     rel="noreferrer"
                   >
@@ -205,7 +205,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/sam_bhav.jain13/"
+                    href="https://www.linkedin.com/in/sambhav-jain-a3a9351b4/"
                     target="_new"
                     rel="noreferrer"
                   >
