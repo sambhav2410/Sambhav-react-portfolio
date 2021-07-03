@@ -167,7 +167,7 @@ export default function HeroSection() {
                   I am second year computer science student who is exploring in
                   the field of front-end developement (Web desgining, Web
                   Development, Graphic Desigining) and learning everyday
-                  something new to improve his skills. Currently working as a
+                  something new to improve my skills. Currently working as a
                   freelancer in Web designer and development from past 2-3
                   months.Looking for a Internship role in a reputable
                   organization to utilize my technical, database, and management
